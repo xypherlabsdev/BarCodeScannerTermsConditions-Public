@@ -1,330 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms &amp; Conditions - QRScan Pro</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(160deg, #0D1B2A 0%, #0F2040 50%, #1A0938 100%);
-            color: #E8F4FF;
-            min-height: 100vh;
-            line-height: 1.7;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 24px 80px;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 48px;
-            padding: 40px 24px;
-            background: rgba(255, 255, 255, 0.07);
-            border: 1px solid rgba(255, 255, 255, 0.13);
-            border-radius: 20px;
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-        }
-
-        .app-icon {
-            width: 64px;
-            height: 64px;
-            background: linear-gradient(135deg, #1A73E8, #7C4DFF);
-            border-radius: 16px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 16px;
-        }
-
-        .app-icon svg {
-            width: 36px;
-            height: 36px;
-            fill: #E8F4FF;
-        }
-
-        .header h1 {
-            font-size: 28px;
-            font-weight: 700;
-            background: linear-gradient(135deg, #82B4FF, #7C4DFF);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 8px;
-        }
-
-        .header .subtitle {
-            color: #9BB8D4;
-            font-size: 14px;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.07);
-            border: 1px solid rgba(255, 255, 255, 0.13);
-            border-radius: 16px;
-            padding: 28px 24px;
-            margin-bottom: 20px;
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            transition: background 0.3s ease;
-        }
-
-        .card:hover {
-            background: rgba(255, 255, 255, 0.11);
-        }
-
-        .card h2 {
-            font-size: 20px;
-            font-weight: 600;
-            color: #82B4FF;
-            margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .card h2 .num {
-            width: 28px;
-            height: 28px;
-            background: linear-gradient(135deg, #1A73E8, #7C4DFF);
-            border-radius: 8px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 13px;
-            font-weight: 700;
-            color: #E8F4FF;
-            flex-shrink: 0;
-        }
-
-        .card p {
-            color: #9BB8D4;
-            font-size: 15px;
-            margin-bottom: 12px;
-        }
-
-        .card p:last-child {
-            margin-bottom: 0;
-        }
-
-        .card ul {
-            list-style: none;
-            padding: 0;
-            margin: 8px 0;
-        }
-
-        .card ul li {
-            color: #9BB8D4;
-            font-size: 15px;
-            padding: 6px 0 6px 24px;
-            position: relative;
-        }
-
-        .card ul li::before {
-            content: '';
-            position: absolute;
-            left: 4px;
-            top: 14px;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #1A73E8, #7C4DFF);
-        }
-
-        .card strong {
-            color: #E8F4FF;
-            font-weight: 500;
-        }
-
-        .effective-date {
-            text-align: center;
-            color: #6B8FAD;
-            font-size: 13px;
-            margin-top: 40px;
-            padding: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        a {
-            color: #82B4FF;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 600px) {
-            .container { padding: 20px 16px 60px; }
-            .header { padding: 28px 16px; }
-            .header h1 { font-size: 24px; }
-            .card { padding: 20px 16px; }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms &amp; Conditions – QRScan Pro</title>
+<meta name="description" content="The terms for using QRScan Pro, the QR code and barcode scanner and generator by Xypher Labs.">
+<style>
+  :root {
+    --bg: #ffffff; --surface: #f6f6f3; --text: #1b1b1d; --muted: #5b5b62;
+    --line: #e3e3de; --accent: #ffd60a; --accent-ink: #7a5c00; --link: #7a5c00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #050506; --surface: #151517; --text: #f7f7f8; --muted: #b4b4ba;
+      --line: rgba(255,255,255,.12); --accent: #ffd60a; --accent-ink: #ffd60a; --link: #ffea61;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; }
+  .mark { width: 40px; height: 40px; border-radius: 11px; flex: none;
+    background: linear-gradient(135deg, #ffea61, #ffd60a 55%, #ffb800); display: grid; place-items: center; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 24px 0 8px; }
+  .meta { color: var(--muted); font-size: .95rem; margin: 0; }
+  .summary { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+    border-radius: 14px; padding: 14px 20px; margin: 24px 0; }
+  .summary ul { margin: 8px 0; padding-left: 20px; }
+  nav.toc { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 20px; }
+  nav.toc ol { margin: 6px 0; padding-left: 22px; columns: 2; column-gap: 28px; }
+  @media (max-width: 560px) { nav.toc ol { columns: 1; } }
+  h2 { font-size: 1.3rem; line-height: 1.3; margin: 40px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  h2 .n { color: var(--accent-ink); margin-right: 6px; }
+  a { color: var(--link); text-underline-offset: 2px; word-break: break-word; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="app-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 11h2V9H3v2zm0 4h2v-2H3v2zm0-8h2V5H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zm0-10v2h14V5H7zM3 11h2V9H3v2zm0 4h2v-2H3v2zm0-8h2V5H3v2z"/>
-                </svg>
-            </div>
-            <h1>Terms &amp; Conditions</h1>
-            <p class="subtitle">QRScan Pro &mdash; Generate &middot; Scan &middot; Manage</p>
-        </div>
+<main class="wrap">
+  <div class="brand">
+    <span class="mark" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#141200">
+        <path d="M2 2h8v8H2zM4 4v4h4V4zM14 2h8v8h-8zm2 2v4h4V4zM2 14h8v8H2zm2 2v4h4v-4zM5 5h2v2H5zM17 5h2v2h-2zM5 17h2v2H5zM13 13h3v3h-3zM18 13h4v2h-4zM13 18h2v4h-2zM17 17h5v5h-5z"/>
+      </svg>
+    </span>
+    QRScan Pro
+  </div>
 
-        <div class="card">
-            <h2><span class="num">1</span> Acceptance of Terms</h2>
-            <p>By downloading, installing, or using <strong>QRScan Pro</strong> ("the App"), you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the App.</p>
-            <p>These terms constitute a legally binding agreement between you ("User") and <strong>Xypher Labs</strong> ("Developer," "we," "our," or "us").</p>
-        </div>
+  <h1>Terms &amp; Conditions</h1>
+  <p class="meta">Xypher Labs · QRScan Pro for Android (com.xypher.qrscanpro)</p>
+  <p class="meta">Effective: 27 April 2026 · Last updated: 20 October 2026</p>
 
-        <div class="card">
-            <h2><span class="num">2</span> Description of Service</h2>
-            <p>QRScan Pro is a free, ad-supported Android application that provides:</p>
-            <ul>
-                <li>Real-time scanning of QR codes and barcodes via your device camera</li>
-                <li>QR/barcode scanning from images in your device gallery</li>
-                <li>QR code generation for various content types (URL, plain text, Wi-Fi credentials, contact, email, phone, and more)</li>
-                <li>Standard barcode generation (EAN-13, Code 128, Code 39, UPC-A, ITF)</li>
-                <li>Local history of scans and generated codes (stored only on your device)</li>
-                <li>Sharing and exporting scanned data and generated QR code images</li>
-                <li>Optional rewarded ad rewards to unlock additional in-app features</li>
-            </ul>
-        </div>
+  <div class="summary">
+    <strong>In short</strong>
+    <ul>
+      <li>QRScan Pro is free to use and is paid for by ads.</li>
+      <li>Use it lawfully. Don't create codes that trick or harm people.</li>
+      <li>Check a code before you open a link or pay. The app's safety hints help but can be wrong.</li>
+      <li>The app is provided as it is. Indian law applies.</li>
+    </ul>
+  </div>
 
-        <div class="card">
-            <h2><span class="num">3</span> Eligibility &amp; Age Requirement</h2>
-            <p>QRScan Pro is intended for users who are <strong>at least 13 years of age</strong> (or the minimum age of digital consent in your country, whichever is higher &mdash; e.g. 16 in some EU member states).</p>
-            <p>By using the App, you represent and warrant that you meet this age requirement. If you are under the applicable age, you must not use the App. The App is not directed at children, and we do not knowingly collect personal information from children under the age of digital consent.</p>
-        </div>
+  <nav class="toc" aria-label="Contents">
+    <strong>Contents</strong>
+    <ol>
+      <li><a href="#accept">Acceptance</a></li>
+      <li><a href="#service">The app</a></li>
+      <li><a href="#age">Eligibility</a></li>
+      <li><a href="#use">Using the app responsibly</a></li>
+      <li><a href="#scanned">Scanned content and safety hints</a></li>
+      <li><a href="#created">Codes you create</a></li>
+      <li><a href="#ads">Advertising</a></li>
+      <li><a href="#privacy">Privacy</a></li>
+      <li><a href="#ip">Intellectual property and licence</a></li>
+      <li><a href="#third">Third-party services and links</a></li>
+      <li><a href="#warranty">Disclaimer of warranties</a></li>
+      <li><a href="#liability">Limitation of liability</a></li>
+      <li><a href="#termination">Termination</a></li>
+      <li><a href="#changes">Changes to these terms</a></li>
+      <li><a href="#law">Governing law</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
 
-        <div class="card">
-            <h2><span class="num">4</span> User Responsibilities</h2>
-            <p>When using QRScan Pro, you agree to:</p>
-            <ul>
-                <li>Use the App only for lawful purposes and in compliance with applicable laws</li>
-                <li>Not use the App to scan, create, or distribute malicious or fraudulent QR codes</li>
-                <li>Not attempt to reverse-engineer, decompile, or modify the App</li>
-                <li>Not use the App to infringe on the intellectual property rights of others</li>
-                <li>Exercise caution when scanning unknown QR codes, especially those linking to external websites or initiating actions (calls, messages, Wi-Fi connections, etc.)</li>
-                <li>Not interfere with or disrupt the App's advertising systems or functionality</li>
-            </ul>
-        </div>
+  <h2 id="accept"><span class="n">1.</span>Acceptance</h2>
+  <p>These terms are an agreement between you and <strong>Xypher Labs</strong>, India ("we", "us"), for the QRScan Pro Android app ("the app"). By installing or using the app you accept these terms and our <a href="https://xypherlabsdev.github.io/QR-Scanner/">Privacy Policy</a>. If you do not agree, please do not use the app.</p>
 
-        <div class="card">
-            <h2><span class="num">5</span> Advertising</h2>
-            <p>QRScan Pro is supported by advertising. By using the App, you acknowledge and agree that:</p>
-            <ul>
-                <li>The App displays ads served by <strong>Google AdMob</strong>, including banner ads, interstitial ads (full-screen), app open ads (on launch and resume), and rewarded ads (which you may optionally view to unlock specific in-app rewards)</li>
-                <li>AdMob may collect data such as your <strong>Advertising ID</strong>, <strong>approximate location</strong> (derived from IP address), <strong>device information</strong>, and <strong>ad interaction data</strong> to deliver and measure ads</li>
-                <li>For users in the European Economic Area (EEA), United Kingdom, and Switzerland, we obtain explicit consent through Google's User Messaging Platform (UMP) before serving personalized ads, in accordance with the <strong>General Data Protection Regulation (GDPR)</strong></li>
-                <li>For users in California and other regulated US states, you may opt out of the "sale" or "sharing" of personal information through the in-app consent dialog or via <strong>Settings &rarr; Privacy Options</strong></li>
-                <li>You may withdraw or change your consent at any time via <strong>Settings &rarr; Privacy Options</strong> within the App (where applicable to your region)</li>
-            </ul>
-            <p>For more details on how AdMob handles data, please review <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
-        </div>
+  <h2 id="service"><span class="n">2.</span>The app</h2>
+  <p>QRScan Pro is a free, ad-supported app for Android that lets you:</p>
+  <ul>
+    <li>scan QR codes and barcodes with the camera or from an image, one at a time or several in a row (batch scan);</li>
+    <li>create QR codes for links, text, Wi-Fi, contacts, email and phone numbers, with your own colours and shapes, and barcodes in EAN-13, UPC-A, Code 128, Code 39 and ITF;</li>
+    <li>keep a History of scanned and created codes on your device, search it and mark favourites;</li>
+    <li>open, copy, share and save codes, join Wi-Fi networks from Wi-Fi codes, search the web for a product barcode, and see hints about risky links;</li>
+    <li>start a scan from a home-screen widget.</li>
+  </ul>
+  <p>The app currently has no in-app purchases. We may add, change or remove features at any time.</p>
 
-        <div class="card">
-            <h2><span class="num">6</span> Privacy &amp; Data Collection</h2>
-            <p>Your privacy is important to us. The App stores your scan history and generated codes <strong>locally on your device only</strong> &mdash; we do not maintain a cloud-based copy of this data.</p>
-            <p>We do, however, collect limited information through:</p>
-            <ul>
-                <li><strong>Google AdMob</strong> &mdash; for ad serving (see Section 5)</li>
-                <li><strong>Google Analytics for Firebase</strong> &mdash; anonymized usage analytics to improve the App</li>
-                <li><strong>Firebase Crashlytics</strong> &mdash; crash reports to help us identify and fix bugs</li>
-            </ul>
-            <p>For full details about what we collect, how we use it, and your rights, please review our <a href="https://xypherlabsdev.github.io/QR-Scanner/" target="_blank" rel="noopener">Privacy Policy</a>.</p>
-        </div>
+  <h2 id="age"><span class="n">3.</span>Eligibility</h2>
+  <p>You must be at least 13 years old, or older where local law sets a higher age for digital consent (for example 16 in some EU countries). The app is not directed at children.</p>
 
-        <div class="card">
-            <h2><span class="num">7</span> Intellectual Property</h2>
-            <p>All content, design, code, graphics, and trademarks within QRScan Pro are the intellectual property of Xypher Labs and are protected by applicable copyright and trademark laws.</p>
-            <p>You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes. This license does not permit you to:</p>
-            <ul>
-                <li>Reproduce, distribute, or create derivative works of the App</li>
-                <li>Use the App's branding or assets without written consent</li>
-                <li>Sublicense or transfer your rights to any third party</li>
-            </ul>
-        </div>
+  <h2 id="use"><span class="n">4.</span>Using the app responsibly</h2>
+  <p>You agree not to:</p>
+  <ul>
+    <li>use the app for anything unlawful, or to break anyone's rights;</li>
+    <li>create or spread codes that lead to phishing, malware, fraud, fake payment requests or other harmful content;</li>
+    <li>copy, modify, reverse-engineer or redistribute the app, except where the law allows it;</li>
+    <li>tap ads on purpose without real interest, use automated tools on ads, or otherwise interfere with the ad systems;</li>
+    <li>use our name, logo or branding without our written permission.</li>
+  </ul>
 
-        <div class="card">
-            <h2><span class="num">8</span> Disclaimer of Warranties</h2>
-            <p>QRScan Pro is provided on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis without warranties of any kind, either express or implied.</p>
-            <p>We do not warrant that:</p>
-            <ul>
-                <li>The App will be uninterrupted, error-free, or completely secure</li>
-                <li>QR codes scanned will always produce accurate or safe results</li>
-                <li>The App will be compatible with all devices or operating system versions</li>
-                <li>Content accessed through scanned QR codes is safe, accurate, or lawful</li>
-                <li>Advertisements displayed in the App are accurate, suitable, or free of objectionable content</li>
-            </ul>
-        </div>
+  <h2 id="scanned"><span class="n">5.</span>Scanned content and safety hints</h2>
+  <p>A code can lead anywhere. We do not create, check or control the content behind codes you scan, including links, Wi-Fi networks, contacts and payment (UPI) codes.</p>
+  <ul>
+    <li>The app's link safety hints are automatic checks done on your device. They can miss a dangerous link or warn about a safe one, and they are not a security service.</li>
+    <li>Always check the payee name and amount in your payment app before you pay with a scanned code.</li>
+    <li>If you turn on <em>Auto-open URLs</em> in Settings, scanned links open without a second look. Use it with care.</li>
+  </ul>
+  <p>What you do with scanned content is your decision and your responsibility.</p>
 
-        <div class="card">
-            <h2><span class="num">9</span> Limitation of Liability</h2>
-            <p>To the maximum extent permitted by law, Xypher Labs shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from:</p>
-            <ul>
-                <li>Your use or inability to use the App</li>
-                <li>Any content obtained through scanning QR codes</li>
-                <li>Unauthorized access to or alteration of your data</li>
-                <li>Any third-party conduct, content, or advertisements within the App</li>
-                <li>Loss of data, revenue, or profits</li>
-            </ul>
-            <p>You acknowledge that you scan QR codes at your own risk and that we have no control over the content or safety of links or data embedded in QR codes, nor over the content of advertisements served by third-party ad networks.</p>
-        </div>
+  <h2 id="created"><span class="n">6.</span>Codes you create</h2>
+  <p>You own the content you put into codes you create, and you are responsible for it. Creating a barcode in the app does not register its number. Products sold in shops normally need EAN or UPC numbers issued by GS1 or another numbering body, so check with them before printing barcodes for retail use. We do not guarantee that every created code will scan on every scanner, printer or surface.</p>
 
-        <div class="card">
-            <h2><span class="num">10</span> Third-Party Services &amp; Links</h2>
-            <p>QRScan Pro integrates with the following third-party services:</p>
-            <ul>
-                <li><strong>Google AdMob</strong> &mdash; advertising</li>
-                <li><strong>Google User Messaging Platform (UMP)</strong> &mdash; consent management for GDPR / CCPA</li>
-                <li><strong>Google Analytics for Firebase</strong> &mdash; anonymized analytics</li>
-                <li><strong>Firebase Crashlytics</strong> &mdash; crash reporting</li>
-                <li><strong>Google Play Billing</strong> &mdash; in-app purchases (where offered)</li>
-            </ul>
-            <p>QR codes scanned through the App may also link to third-party websites or services. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party sites, services, or advertisements.</p>
-            <p>We strongly advise you to review the terms and privacy policies of any third-party sites you visit through scanned QR codes.</p>
-        </div>
+  <h2 id="ads"><span class="n">7.</span>Advertising</h2>
+  <p>The app shows ads served by Google AdMob, including banner, native, full-screen (interstitial) and app-open ads, and sometimes promotions of our own apps. Ads are provided by third-party advertisers, who are responsible for their content and offers. Your ad consent options are described in our <a href="https://xypherlabsdev.github.io/QR-Scanner/#ads">Privacy Policy</a> and can be changed in <em>Settings → Privacy Options</em> where that option is shown.</p>
+  <p>When you share a code from the app, the shared text, or the caption of a shared QR image, includes a link to QRScan Pro on Google Play.</p>
 
-        <div class="card">
-            <h2><span class="num">11</span> Termination</h2>
-            <p>We reserve the right to terminate or suspend your access to the App at any time, without prior notice, for conduct that we determine violates these Terms or is harmful to other users, us, or third parties.</p>
-            <p>Upon termination, your right to use the App ceases immediately. All locally stored data may be retained on your device until you uninstall the App.</p>
-        </div>
+  <h2 id="privacy"><span class="n">8.</span>Privacy</h2>
+  <p>Your History, scan photos and settings are stored on your device. The app uses Google AdMob, Google's consent tool, Google Analytics for Firebase, Firebase Crashlytics and Firebase Remote Config. The <a href="https://xypherlabsdev.github.io/QR-Scanner/">Privacy Policy</a> explains what they collect and your choices.</p>
 
-        <div class="card">
-            <h2><span class="num">12</span> Modifications to Terms</h2>
-            <p>We reserve the right to modify these Terms at any time. Updated terms will be posted on this page with a revised effective date. Your continued use of the App after any changes constitutes acceptance of the new terms.</p>
-            <p>For significant changes, we will make reasonable efforts to notify users through the App or other means.</p>
-        </div>
+  <h2 id="ip"><span class="n">9.</span>Intellectual property and licence</h2>
+  <p>The app, its design, code, graphics and the QRScan Pro name belong to Xypher Labs. We give you a personal, limited, non-exclusive, non-transferable and revocable licence to install and use the app on devices you own or control. "QR Code" is a registered trademark of DENSO WAVE INCORPORATED; other names may be trademarks of their owners.</p>
 
-        <div class="card">
-            <h2><span class="num">13</span> Governing Law</h2>
-            <p>These Terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions. Any disputes arising from these Terms shall be resolved in the courts of competent jurisdiction in India.</p>
-        </div>
+  <h2 id="third"><span class="n">10.</span>Third-party services and links</h2>
+  <p>The app relies on services from Google (AdMob, User Messaging Platform, Firebase, ML Kit) and opens other apps and websites when you choose to: browsers, Google Search, payment apps, Google Play and the apps you share to. Those services have their own terms and policies, and we are not responsible for them or for content you reach through them.</p>
 
-        <div class="card">
-            <h2><span class="num">14</span> Contact Us</h2>
-            <p>If you have any questions or concerns about these Terms and Conditions, please contact us at:</p>
-            <p><strong>Email:</strong> <a href="mailto:xypherlabs.dev@gmail.com">xypherlabs.dev@gmail.com</a></p>
-            <p><strong>Developer:</strong> Xypher Labs</p>
-            <p><strong>Privacy Policy:</strong> <a href="https://xypherlabsdev.github.io/QR-Scanner/" target="_blank" rel="noopener">https://xypherlabsdev.github.io/QR-Scanner/</a></p>
-        </div>
+  <h2 id="warranty"><span class="n">11.</span>Disclaimer of warranties</h2>
+  <p>The app is provided "as is" and "as available". To the extent the law allows, we make no promises that it will always work, be error-free, read every code correctly, work on every device, or that links, content or ads reached through it are safe or accurate.</p>
 
-        <div class="effective-date">
-            Effective Date: April 27, 2026 &middot; QRScan Pro by Xypher Labs
-        </div>
-    </div>
+  <h2 id="liability"><span class="n">12.</span>Limitation of liability</h2>
+  <p>To the extent the law allows, Xypher Labs is not liable for indirect, incidental or consequential losses, or for loss of data, money, revenue or profits, arising from your use of the app, from content behind scanned codes, from payments made using scanned codes, from third-party services or ads, or from loss of your History. Because the app is free, our total liability to you for any claim is limited to INR 1,000. Nothing in these terms limits liability that cannot be limited by law.</p>
+
+  <h2 id="termination"><span class="n">13.</span>Termination</h2>
+  <p>You can stop using the app at any time by uninstalling it, which also removes the data it stored on your device. We may stop offering the app, or end your licence if you break these terms. Sections 5, 6 and 9 to 15 continue to apply after termination.</p>
+
+  <h2 id="changes"><span class="n">14.</span>Changes to these terms</h2>
+  <p>We may update these terms. The new version will be posted on this page with a new "Last updated" date, and important changes will be pointed out in the app where reasonable. Using the app after an update means you accept the updated terms.</p>
+
+  <h2 id="law"><span class="n">15.</span>Governing law</h2>
+  <p>These terms are governed by the laws of India, without regard to conflict-of-law rules. Disputes will be handled by the courts of competent jurisdiction in India. If you live in a country whose consumer laws give you rights that cannot be waived, those rights are not affected.</p>
+
+  <h2 id="contact"><span class="n">16.</span>Contact</h2>
+  <p>Questions about these terms: <a href="mailto:xypherlabs.dev@gmail.com">xypherlabs.dev@gmail.com</a>.</p>
+
+  <footer>
+    © 2026 Xypher Labs · <a href="https://xypherlabsdev.github.io/QR-Scanner/">Privacy Policy</a>
+  </footer>
+</main>
 </body>
 </html>
